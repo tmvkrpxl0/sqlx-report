@@ -1,0 +1,10 @@
+[package]
+name = "sqlx-report"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sqlx = { version = "0.8.2", features = ["runtime-tokio", "sqlite"], path = "/home/tmvkrpxl0/sqlx" }
+sqlx-sqlite = { version = "*", features = ["bundled"], path = "/home/tmvkrpxl0/sqlx/sqlx-sqlite" }
+libsqlite3-sys = { version = "*", features = ["bundled"] }
+tokio = { version = "1", features = ["full"] }
